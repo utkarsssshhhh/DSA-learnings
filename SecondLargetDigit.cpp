@@ -21,6 +21,7 @@ void sort(int arr[], int n){
 
 
 void bruteForce(int arr[], int n){
+    sort(arr, n);
     int largest = arr[5];
     for(int i = n-2; i >=0; i--){
        if(arr[i] != largest){
@@ -65,8 +66,5 @@ void Optimal(int arr[], int n){
 
 int main(){
     int n = 6;
-    int arr[6]= {1, 2, 4, 7, 7, 5};
-    sort(arr, 6);
-
-       
+    int arr[6]= {1, 2, 4, 7, 7, 5};       
 }
